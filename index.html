@@ -427,12 +427,6 @@
                     </div>
                     <div class="teacher-info">
                         <!-- ngIf: ViewModel.StudentSchoolEnrollment.Advisor && ViewModel.IsAllowed('AllowToViewAdvisingTeachersEntryID') --><div class="advisor teacher ng-scope" ng-if="ViewModel.StudentSchoolEnrollment.Advisor &amp;&amp; ViewModel.IsAllowed('AllowToViewAdvisingTeachersEntryID')">
-                            <b ng-bind="ViewModel.Resources['StudentSchoolEnrollment.Advisor']" class="ng-binding">Danışman</b>
-                            <span ng-bind="ViewModel.StudentSchoolEnrollment.Advisor.Base.Name.FullName" class="ng-binding">TUSEM KARAKUŞ</span>
-                        </div><!-- end ngIf: ViewModel.StudentSchoolEnrollment.Advisor && ViewModel.IsAllowed('AllowToViewAdvisingTeachersEntryID') -->
-                        <!-- ngIf: ViewModel.StudentSchoolEnrollment.Counselor && ViewModel.IsAllowed('AllowToViewAdvisingTeachersEntryID') --><div class="guide teacher ng-scope" ng-if="ViewModel.StudentSchoolEnrollment.Counselor &amp;&amp; ViewModel.IsAllowed('AllowToViewAdvisingTeachersEntryID')">
-                            <b ng-bind="ViewModel.Resources['StudentSchoolEnrollment.Counselor']" class="ng-binding">Rehber Öğretmen</b>
-                            <span ng-bind="ViewModel.StudentSchoolEnrollment.Counselor.Base.Name.FullName" class="ng-binding">CANSU KAYA</span>
                         </div><!-- end ngIf: ViewModel.StudentSchoolEnrollment.Counselor && ViewModel.IsAllowed('AllowToViewAdvisingTeachersEntryID') -->
                         <!-- ngIf: ViewModel.StudentSchoolEnrollment.HomeroomInfo.HomeroomTeacher && ViewModel.IsAllowed('AllowToViewAdvisingTeachersEntryID') -->
                     </div>
@@ -443,7 +437,7 @@
                             <ul class="cardslider__cards">
                                 <!-- ngRepeat: announcement in ViewModel.NotificationViewModel.AnnouncementViewModel.Announcements --><li ng-repeat="announcement in ViewModel.NotificationViewModel.AnnouncementViewModel.Announcements" class="ng-scope cardslider__card cardslider__card--transitions false cardslider__card--index-0" aria-hidden="false" style="z-index: 0;">
                                     <div class="wrapper">
-                                        <div class="title ng-binding" ng-bind="announcement.Subject">GEN KOLEJİ ATAŞEHİR EKİM AYI YEMEK MENÜSÜ</div>
+                
                                         <div class="content ng-binding" ng-bind="ViewModel.NotificationViewModel.AnnouncementViewModel.GetBodyShortText(announcement)">2024-2025 EĞİTİM ÖĞRETİM YILI GEN KOLEJİ ATAŞEHİR EKİM AYI YEMEK MENÜSÜ DUYURULAR SAYFASINA YÜKLENMİŞTİR.
 
 
