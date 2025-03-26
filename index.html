@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParkerGen - Map</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="map-page">
+  <div class="container">
+    <div class="header">
+      <h1>ParkerGen</h1>
+      <div class="header-buttons">
+        <a href="index.html" class="back-btn">Back to Home</a>
+        <button id="toggleMarkingMode" class="primary-btn">Mark Spot</button>
+        <button id="showAllSpots">Show All</button>
+      </div>
+    </div>
+    <div class="map-container">
+      <div id="map"></div>
+      <div class="controls">
+        <button id="centerLocation" class="primary-btn">
+          <span>Find My Location</span>
+        </button>
+        <button id="exportData">
+          <span>Export Data</span>
+        </button>
+        <button id="refreshAvailability">
+          <span>Refresh Spots</span>
+        </button>
+      </div>
+    </div>
+    <div class="spot-list" id="spotList">
+      <h3>Saved Parking Spots</h3>
+      <div id="spotItems">
+        Made By sarpgknull
+
+        <div>
+          Note:
+          This is the frontend probably code the backend when i get some free time
+        </div>
+
+        <div>
+          My Socials:
+        </div>
+          <i class="fa-brands fa-github fa-fade" style="padding-left: 2rem;"></i>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="map.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
